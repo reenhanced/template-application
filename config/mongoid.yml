@@ -1,0 +1,12 @@
+development:
+  host: localhost
+  database: template_application2_development
+
+test:
+  host: localhost
+  database: template_application2_test
+
+# set these environment variables on your prod server
+production:
+  host: localhost
+  database: template_application2_production

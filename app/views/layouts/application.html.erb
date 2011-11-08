@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Railzbiz</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render :partial => "shared/header" %>
+    <%= render :partial => 'shared/flashes' -%>
+
+    <div id="body">
+      <div id="main-content" class="main-content">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render :partial => "shared/javascript" %>
+  </body>
+</html>
